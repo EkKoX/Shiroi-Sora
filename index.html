@@ -1,140 +1,192 @@
-<html>
 <!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./SoraiSora.css" type="text/css">
-    <link rel="icon" type="image/png"  href="imagenes/Icono.png">
-    <script src="Shiroisora.js"></script>
-    <script src="show-on-scroll.js"></script>
-    <script src="https://kit.fontawesome.com/18b6e5d760.js" crossorigin="anonymous"></script>
-    <title>Home | Shiroi Sora</title>
-</head>
+<html lang="es" tema="dia">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./main.css" type="text/css">
+        <link rel="icon" type="image/png"  href="imagenes/Icono.png">
+        <script src="Shiroisora.js"></script>
+        <script src="show-on-scroll.js"></script>
+        <script src="https://kit.fontawesome.com/18b6e5d760.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <title>Home | Shiroi Sora</title>
+    </head>
 
-<body>
-        <div class="header">
-            <img width="60px" src="./imagenes/Logo.png" alt="Logo">
-            <div class="menu seleccionado">
-                <a href="SoraiSoraHome.html">HOME</a>
-            </div>
-            <div class="menu">
-                <a href="ShiroiSora.Agentes.html">AGENTES</a>
-            </div>
-            <div class="menu">
-                <a href="ShiroiSora.Agentes.html">OBJETOS</a>
-            </div>
-            <div class="menu derecha">
-                <a href="ShiroiSora.Agentes.html" target="_blank">SOBRE NOSOTROS</a>
-            </div>
-            <div class="menu derecha">
-                <a href="ShiroiSora.Agentes.html" target="_blank">SOPORTE</a>
-            </div>
-            <div class="menu derecha">
-                <a href="ShiroiSora.Agentes.html" target="_blank">INICIAR SESION</a>
-            </div>
-        </div>
-        <div class="boton-descargar">
-                <button>DESCARGAR YA<p class="desc1">DESCARGAR YA</p><p class="desc2">DESCARGAR YA</p></button>
-        </div>
-        <div class="home main">
-            <div class="fondomain">
-                <p></p>
-            </div>
-            <h2><span class="op1">¿QUE ES SHIROI SORA?</span></h2>
-            <p><span class="cursiva">SHIROI SORA</span> es un shooter en tercera persona en el cual vivirás una aventura encarnado en un agente de dirigido por el sargento 1º de las tropas espaciales de <span class="cursiva">El Cielo</span>. Encargado de controlar el posible golpe de estado en el año 2166 tendrás que enfrentarte a formidables terroristas e ingluso a enormes maquinas para conseguir tu objetivo.</p>
-            <br />
-            <div id="agente"></div>
-            <p class="agent">ELIGE TU</p>
-            <h2 class="agent"><a href="#agente">TIPO DE AGENTE</a></h2>
-            <div class="seleccion">
-                <button onclick="visible1(), stats1()">ASESINOS</button>
-                <button onclick="visible2(), stats2()">TANQUES</button>
-                <button onclick="visible3(), stats3()">MAGOS</button>
-            </div>
-            <div class="textoagentes">
-                <div class="stats">
-                    <h2>RESISTENCIA</h2>
-                    <div class="vida">
-                        <div id="barra1" style="width:40%; transition: 0.3s;"><p></p></div>
-                    </div>
-                    <h2>DAÑO</h2>
-                    <div class="daño">
-                        <div id="barra2" style="width:100%; transition: 0.3s;"><p></p></div>
-                    </div>
-                    <h2>MAGIA</h2>
-                    <div class="magia">
-                        <div id="barra3" style="width:20%; transition: 0.3s;"><p></p></div>
-                    </div>
+    <body class="home">
+        <header class="header">
+            <button type="button" onclick="activateShow()"><img src="./imagenes/logo-reducido.png" alt="Logo"></button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#" class="seleccionado">HOME</a></li>
+                    <li><a href="agentes.html">AGENTES</a></li>
+                    <li><a href="ShiroiSora.Objetos.html">OBJETOS</a></li>
+                    <li><a href="soporte.html">SOPORTE</a></li>
+                    <li><a href="iniciodesesion.html">INICIAR SESION</a></li>
+                </ul>
+            </nav>
+            <div class="left">
+                <picture>
+                    <source srcset="./imagenes/logo-reducido.png" media="(max-width: 1000px)">
+                    <img src="./imagenes/Logo.png" alt="Logo">
+                </picture>
+                <div class="menu seleccionado">
+                    <a href="#">HOME</a>
                 </div>
-                <div id="vis1" class="bloqueag" style="width: 100%; transition: opacity, width; transition-duration: 0.3s, 0s; transition-delay: 0s, 0.3s;">
-                    <div class="textoag">
-                        <h2 id="titulo1" style="transition: all 0s; transition-delay: 0.3s;">ASESINOS</h2>
-                        <p id="parrafo1" style="transition: all 0s; transition-delay: 0.3s;">Los asesinos son soldados instruidos con equipamiento sigiloso y por ello suelen utilizar armamento de baja supresión.</p>
-                    </div>
-                    <div class="imga"><img src="./imagenes/asesinos2.png"/></div>
+                <div class="menu">
+                    <a href="agentes.html">AGENTES</a>
                 </div>
-                <div id="vis2" class="bloqueag" style="width: 0%; opacity: 0; transition: opacity, width; transition-duration: 0.3s, 0s; transition-delay: 0s, 0.3s;">
-                    <div class="textoag">
-                        <h2 id="titulo2" style="font-size: 0px; transition: all 0s; transition-delay: 0.3s;">TANQUES</h2>
-                        <p id="parrafo2" style="font-size: 0px; transition: all 0s; transition-delay: 0.3s;">Los tanques son soldados fortalecidos físicamente para ser capaces de soportar una gran cantidad de daño.</p>
-                    </div>
-                    <div class="imga"><img src="./imagenes/tanques2.png"/></div>
-                </div>
-                <div id="vis3" class="bloqueag" style="width: 0%; opacity: 0; transition: opacity, width; transition-duration: 0.3s, 0s; transition-delay: 0s, 0.3s;">
-                    <div class="textoag">
-                        <h2 id="titulo3" style="font-size: 0px; transition: all 0s; transition-delay: 0.3s;">MAGOS</h2>
-                        <p id="parrafo3" style="font-size: 0px; transition: all 0s; transition-delay: 0.3s;">Los magos son soldados equipados con una tecnología conocida como "magia" muy avanzada.</p>
-                    </div>
-                    <div class="imga"><img src="./imagenes/magos2.png"/></div>
+                <div class="menu">
+                    <a href="ShiroiSora.Objetos.html">OBJETOS</a>
                 </div>
             </div>
-            <div class="objetos">
-                <p class="agent show-on-scroll">DESCUBRE TU</p>
-                <h2 class="equip agent show-on-scroll">EQUIPAMIENTO</h2>
-                <div class="bloque1">
-                    <div class="objeto show-on-scroll">
-                        <div class="imgob"><img src="imagenes/logoarma.png" /></div>
-                        <div class="textob2">
-                            <h2>ARMAS</h2>
-                            <p>Existen una gran diversidad de armas como fusiles de asalto, subfusiles, escopetas, pistolas o incluso espadas y arcos. Escoge una dependiendo de tus necesidades y estilo de juego y aniquila a tus enemigos con ella.</p>
+            <div class="right">
+                <div class="menu">
+                    <a href="soporte.html">SOPORTE</a>
+                </div>
+                <div class="menu">
+                    <a href="iniciodesesion.html">INICIAR SESION</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="espacio-menu"></div>
+            <div class="boton-descargar">
+                    <div class="vid">
+                        <video id="video" loop autoplay muted>
+                            <source src="imagenes/video-boton-descargar.mp4"/>
+                        </video>
+                    </div>
+                    <button>DESCARGAR YA</button>
+            </div>
+            <div class="main">
+                <h2 class="op1">¿QUE ES SHIROI SORA?</h2>
+                <p><span class="cursiva">SHIROI SORA</span> es un shooter en tercera persona en el cual vivirás una aventura encarnado en un agente dirigido por el sargento 1º de las tropas espaciales de <span class="cursiva">El Cielo</span>. Encargado de controlar el posible golpe de estado en el año 2166 tendrás que enfrentarte a formidables terroristas e incluso a enormes máquinas para conseguir tu objetivo.</p>
+                <div id="agente"></div>
+                <p class="agent">ELIGE TU</p>
+                <h2 class="agent"><a href="#agente">TIPO DE AGENTE</a></h2>
+                <div class="seleccion">
+                    <button onclick="visible1(), stats1()">ASESINOS</button>
+                    <button onclick="visible2(), stats2()">TANQUES</button>
+                    <button onclick="visible3(), stats3()">MAGOS</button>
+                </div>
+                <div class="textoagentes">
+                    <div class="stats">
+                        <h2>RESISTENCIA</h2>
+                        <div class="vida">
+                            <div id="barra1" style="width:40%; transition: 0.3s;"><p></p></div>
+                        </div>
+                        <h2>DAÑO</h2>
+                        <div class="daño">
+                            <div id="barra2" style="width:100%; transition: 0.3s;"><p></p></div>
+                        </div>
+                        <h2>MAGIA</h2>
+                        <div class="magia">
+                            <div id="barra3" style="width:20%; transition: 0.3s;"><p></p></div>
                         </div>
                     </div>
-                    <div class="objeto show-on-scroll">
-                        <div class="textob">
-                            <h2>PECHERAS</h2>
-                            <p>La pechera o armadura corporal es un tipo de equipamiento que mitiga el daño causado por los enemigos u otros jugadores en la zona de el pecho, consigue unas mejores para aguantar un daño muchisimo mayor.</p>
+                    <div id="vis1" class="bloqueag" style="display: flex;">
+                        <div id="estaAbierto1" class="textoag">
+                            <h2 id="titulo1">ASESINOS</h2>
+                            <p id="parrafo1">Los asesinos son soldados instruidos con equipamiento sigiloso y por ello suelen utilizar armamento de baja supresión.</p>
                         </div>
-                        <div class="imgob"><img src="imagenes/logopechera.png" /></div>
+                        <div class="imga"><img src="./imagenes/asesinos2.png" alt="Imagen de ejemplo asesino"/></div>
+                    </div>
+                    <div id="vis2" class="bloqueag" style="display: none;">
+                        <div id="estaAbierto2" class="textoag">
+                            <h2 id="titulo2">TANQUES</h2>
+                            <p id="parrafo2">Los tanques son soldados fortalecidos físicamente para ser capaces de soportar una gran cantidad de daño.</p>
+                        </div>
+                        <div class="imga"><img src="./imagenes/tanques2.png" alt="Imagen de ejemplo tanque"/></div>
+                    </div>
+                    <div id="vis3" class="bloqueag" style="display: none;">
+                        <div id="estaAbierto3" class="textoag">
+                            <h2 id="titulo3">MAGOS</h2>
+                            <p id="parrafo3">Los magos son soldados equipados con una tecnología conocida como "magia" muy avanzada.</p>
+                        </div>
+                        <div class="imga"><img src="./imagenes/magos2.png" alt="Imagen de ejemplo mago"/></div>
                     </div>
                 </div>
-                <div class="bloque2">
-                    <div class="objeto show-on-scroll">
-                        <div class="imgob"><img src="imagenes/logogrebas.png" /></div>
-                        <div class="textob2">
-                            <h2>GREBAS</h2>
-                            <p>Las grevas son un tipo de equipamiento que mitiga el daño causado por los enemigos u otros jugadores en la zona de la cintura y las piernas, consigue unas mejores para aguantar un daño muchisimo mayor.</p>
+                <div class="objetos">
+                    <p class="agent show-on-scroll">DESCUBRE TU</p>
+                    <h2 class="equip agent show-on-scroll">EQUIPAMIENTO</h2>
+                    <div class="bloque1">
+                        <div class="objeto show-on-scroll">
+                            <div class="imgob"><img class="arma" src="imagenes/logoarma.png" alt="ejemplo arma"/></div>
+                            <div class="textob2">
+                                <h2>ARMAS</h2>
+                                <p>Existen una gran diversidad de armas como fusiles de asalto, subfusiles, escopetas, pistolas o incluso espadas y arcos. Escoge una dependiendo de tus necesidades y estilo de juego y aniquila a tus enemigos con ella.</p>
+                            </div>
+                        </div>
+                        <div class="objeto show-on-scroll">
+                            <div class="textob">
+                                <h2>PECHERAS</h2>
+                                <p>La pechera o armadura corporal es un tipo de equipamiento que mitiga el daño causado por los enemigos u otros jugadores en la zona de el pecho. Consigue unas mejores para aguantar un daño muchisimo mayor.</p>
+                            </div>
+                            <div class="imgob"><img class="pechera" src="imagenes/logopechera.png" alt="ejemplo pechera"/></div>
                         </div>
                     </div>
-                    <div class="objeto show-on-scroll">
-                        <div class="textob">
-                            <h2>CASCOS</h2>
-                            <p>El casco es un tipo de equipamiento que mitiga el daño causado por los enemigos u otros jugadores en la zona de la cabeza, consigue unas mejores para aguantar un daño muchisimo mayor.</p>
+                    <div class="bloque2">
+                        <div class="objeto show-on-scroll">
+                            <div class="imgob"><img class="grebas" src="imagenes/logogrebas.png" alt="ejemplo grebas"/></div>
+                            <div class="textob2">
+                                <h2>GREBAS</h2>
+                                <p>Las grebas son un tipo de equipamiento que mitiga el daño causado por los enemigos u otros jugadores en la zona de la cintura y las piernas. Consigue unas mejores para aguantar un daño muchisimo mayor.</p>
+                            </div>
                         </div>
-                        <div class="imgob"><img src="imagenes/logocascos.png" /></div>
+                        <div class="objeto show-on-scroll">
+                            <div class="textob">
+                                <h2>CASCOS</h2>
+                                <p>El casco es un tipo de equipamiento que mitiga el daño causado por los enemigos u otros jugadores en la zona de la cabeza. Consigue unas mejores para aguantar un daño muchisimo mayor.</p>
+                            </div>
+                            <div class="imgob"><img class="casco" src="imagenes/logocascos.png" alt="ejemlo casco"/></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="requisitos">
+                    <h2 class="agent">REQUISITOS</h2>
+                    <div class="requis">
+                        <h2>MINIMOS</h2>
+                        <ul>
+                            <li>Sistema Operativo:Windows XP SP 3 ó superior</li>
+                            <li>Procesador:Intel Core 2 Duo e6400 ó AMD Athlon x64 4000+</li>
+                            <li>Memoria:2 GB RAM</li>
+                            <li>Tarjeta gráfica:Nvidia GeForce 8600 GT ó ATI Radeon HD 3600</li>
+                            <li>DirectX :9.0c</li>
+                            <li>Disco duro:10 GB HD space</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </main>
+        <footer>
+            <div class="columna">
+                <h2>QUIENES SOMOS</h2>
+                <p><a href="HistoriaShiroiSora.html">Historia</a></p>
+            </div>
+            <div class="columna">
+                <h2>CONTACTO</h2>
+                <p><a>Email: ShiroiSora_Game@gmail.com</a></p>
+                <p><a>Telefono: 914657891</a></p>
+                <p><a href="ubicacion.html">Ubicacion</a></p>
+            </div>
+        </footer>
+        <div class="cambiar-modo cambiar-tema">
+            <input type="checkbox" id="boton-cambiar-tema">
+            <label for="boton-cambiar-tema" class="social">
+                <i class="fas fa-moon cambiar-icono"></i>
+            </label>
         </div>
-    <div class="footer">
-        <div class="derecha">
-            <a class="social" href=""><i class="fab fa-instagram"></i></a>
-            <a class="social" href=""><i class="fab fa-twitter"></i></a>
-            <a class="social" href=""><i class="fab fa-facebook"></i></a>
-            <a class="social" href=""><i class="fab fa-youtube"></i></a>
+        <div class="redes">
+            <div class="derecha">
+                <a class="social" href="https://www.instagram.com/shiroisora_game/"><i class="fab fa-instagram"></i></a>
+                <a class="social" href="https://twitter.com/ShiroiSora_Game"><i class="fab fa-twitter"></i></a>
+                <a class="social" href="https://www.facebook.com/shiroi.sora.5872/"><i class="fab fa-facebook"></i></a>
+                <a class="social" href="https://www.youtube.com/channel/UCd80_7ie1F2ba4PAnWDdlhA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="degradado"/>
-</body>
+        <script src="cambiarTema.js"></script>
+        <script src="./prueba.js"></script>
+    </body>
 </html>

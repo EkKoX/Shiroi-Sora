@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="es" tema="dia">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./main.css" type="text/css">
+        <link rel="icon" type="image/png"  href="imagenes/Icono.png">
+        <script src="Shiroisora.js"></script>
+        <script src="show-on-scroll.js"></script>
+        <script src="https://kit.fontawesome.com/18b6e5d760.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <title>Agentes | Shiroi Sora</title>
+    </head>
+
+    <body class="ag">
+        <header class="header">
+            <button type="button" onclick="activateShow()"><img src="./imagenes/logo-reducido.png" alt="Logo"></button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#" class="seleccionado">AGENTES</a></li>
+                    <li><a href="ShiroiSora.Objetos.html">OBJETOS</a></li>
+                    <li><a href="soporte.html">SOPORTE</a></li>
+                    <li><a href="iniciodesesion.html">INICIAR SESION</a></li>
+                </ul>
+            </nav>
+            <div class="left">
+                <picture>
+                    <source srcset="./imagenes/logo-reducido.png" media="(max-width: 1000px)">
+                    <img src="./imagenes/Logo.png" alt="Logo">
+                </picture>
+                <div class="menu">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="menu seleccionado">
+                    <a href="#">AGENTES</a>
+                </div>
+                <div class="menu">
+                    <a href="ShiroiSora.Objetos.html">OBJETOS</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="menu">
+                    <a href="soporte.html">SOPORTE</a>
+                </div>
+                <div class="menu">
+                    <a href="iniciodesesion.html">INICIAR SESION</a>
+                </div>
+            </div>
+        </header>
+        <div class="espacio"></div>
+        <main class="main">
+            <div class="fondomain">
+                <p></p>
+            </div>
+            <div class="tipos">
+                <a href="#asesinos">ASESINOS</a>
+                <a href="#tanques">TANQUES</a>
+                <a href="#magos">MAGOS</a>
+            </div>
+            <h2 class="op1">¿QUE ES UN AGENTE?</h2>
+            <p>Un agente es un personaje jugable con sus propias habilidades especificas y capaz de utilizar un equipamiento diferente.</p>
+            <h2 id="asesinos">ASESINOS</h2>
+            <div class="objetos">
+                <div class="bloque1">
+                    <div class="objeto">
+                        <div class="imgob"><img src="./imagenes/asesinos2.png" /></div>
+                        <div class="textob2">
+                            <h2>IVARA</h2>
+                            <p>Ivara es un asesino el cual tiene una gran habilidad con los arcos. Este personaje es capaz de escabullirse sigilosamente entre los enemigos.</p>
+                        </div>
+                    </div>
+                    <div class="objeto">
+                        <div class="textob">
+                            <h2>MESA</h2>
+                            <p>Mesa es un assesino capaz de demostrar su velocidad con solo un cuchillo. Este personaje se acerca tan rápido a los enemigos como un rayo.</p>
+                        </div>
+                        <div class="imgob"><img src="./imagenes/asesino2.png" /></div>
+                    </div>
+                </div>
+                <div class="bloque2">
+                    <div class="objeto">
+                        <div class="imgob"><img src="imagenes/asesino3.png" /></div>
+                        <div class="textob2">
+                            <h2>LOKI</h2>
+                            <p>Loki es un asesino capaz de duplicarse, nunca sabras cual es el de verdad. Este personaje confunde a todos sus enemigos fácilmente.</p>
+                        </div>
+                    </div>
+                    <div class="objeto">
+                        <div class="textob">
+                            <h2>WISP</h2>
+                            <p>Wisp es un asesino que puede entrar en el plano de las sombras y asesinarlos sin que sean capaz de verlo.</p>
+                        </div>
+                        <div class="imgob"><img src="imagenes/asesino4.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <h2 id="tanques">TANQUES</h2>
+            <div class="objetos">
+                <div class="bloque1">
+                    <div class="objeto">
+                        <div class="imgob"><img src="imagenes/tanques2.png" /></div>
+                        <div class="textob2">
+                            <h2>ATLAS</h2>
+                            <p>Atlas es un tanque capaz de aguantar hasta explosiones sin despeinarse. Este personaje es un profesional con las ametralladoras ligeras.</p>
+                        </div>
+                    </div>
+                    <div class="objeto">
+                        <div class="textob">
+                            <h2>GRENDEL</h2>
+                            <p>Grendel es un tanque capaz de deborar a su enemigos sin llenarse. Consume a tus enemigos ganando vida y energia.</p>
+                        </div>
+                        <div class="imgob"><img src="imagenes/tanque2.png" /></div>
+                    </div>
+                </div>
+                <div class="bloque2">
+                    <div class="objeto">
+                        <div class="imgob"><img src="imagenes/tanque3.png" /></div>
+                        <div class="textob2">
+                            <h2>RHINO</h2>
+                            <p>Rhino es un tanque capaz de abatir a sus enemigos de un solo golpe con su cabeza. Tumba a tus rivales con tus propias manos.</p>
+                        </div>
+                    </div>
+                    <div class="objeto">
+                        <div class="textob">
+                            <h2>VAUBAN</h2>
+                            <p>Vauban es un tanque capaz de romper un tanque por la mitad de un solo golpe en seco. Enfrentate a tus enemigos con los puños más resistentes y explosivos.</p>
+                        </div>
+                        <div class="imgob"><img src="imagenes/tanque4.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <h2 id="magos">MAGOS</h2>
+            <div class="objetos">
+                <div class="bloque1">
+                    <div class="objeto">
+                        <div class="imgob"><img src="imagenes/magos2.png" /></div>
+                        <div class="textob2">
+                            <h2>VALKYR</h2>
+                            <p>Valkyr es un mago capaz de destrozar a sus enemigos con los nanorobots soltados por sus brazos. Realiza una limpieza de un sector en poco tiempo.</p>
+                        </div>
+                    </div>
+                    <div class="objeto">
+                        <div class="textob">
+                            <h2>EQUINOX</h2>
+                            <p>Equinox es un mago capaz de equilibrar entre enemigos y aliados. Este personaje es capaz de curar a tus aliados y eliminar a tus enemigos en cuestión de segundos.</p>
+                        </div>
+                        <div class="imgob"><img src="imagenes/mago1.png" /></div>
+                    </div>
+                </div>
+                <div class="bloque2">
+                    <div class="objeto">
+                        <div class="imgob"><img src="imagenes/mago2.png" /></div>
+                        <div class="textob2">
+                            <h2>MAG</h2>
+                            <p>Mag es un agente capaz de controlar el tiempo a su antojo, realentiza el tiempo para esquivar bales o aumenta el tiempo del crono para llegar al momento deseado en poco tiempo.</p>
+                        </div>
+                    </div>
+                    <div class="objeto">
+                        <div class="textob">
+                            <h2>MIRAGE</h2>
+                            <p>Mirage, el mentiroso compulsivo, posee una gran cantidad de bichos roboticos que son capaces de matar tanto o más que unos reales. Infecta a tus enemigos confundiendoles con veneno.</p>
+                        </div>
+                        <div class="imgob"><img src="imagenes/mago3.png" /></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="columna">
+                <h2>QUIENES SOMOS</h2>
+                <p><a href="HistoriaShiroiSora.html">Historia</a></p>
+            </div>
+            <div class="columna">
+                <h2>CONTACTO</h2>
+                <p><a>Email: ShiroiSora_Game@gmail.com</a></p>
+                <p><a>Telefono: 914657891</a></p>
+                <p><a href="ubicacion.html">Ubicacion</a></p>
+            </div>
+        </footer>
+        <div class="cambiar-modo cambiar-tema">
+            <input type="checkbox" id="boton-cambiar-tema">
+            <label for="boton-cambiar-tema" class="social">
+                <i class="fas fa-moon cambiar-icono"></i>
+            </label>
+        </div>
+        <div class="redes">
+            <a class="social" href="https://www.instagram.com/shiroisora_game/"><i class="fab fa-instagram"></i></a>
+            <a class="social" href="https://twitter.com/ShiroiSora_Game"><i class="fab fa-twitter"></i></a>
+            <a class="social" href="https://www.facebook.com/shiroi.sora.5872/"><i class="fab fa-facebook"></i></a>
+            <a class="social" href="https://www.youtube.com/channel/UCd80_7ie1F2ba4PAnWDdlhA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+        </div>
+        <script src="cambiarTema.js"></script>
+        <script src="./prueba.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="es" tema="dia">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./main.css" type="text/css">
+        <link rel="icon" type="image/png"  href="imagenes/Icono.png">
+        <script src="Shiroisora.js"></script>
+        <script src="show-on-scroll.js"></script>
+        <script src="https://kit.fontawesome.com/18b6e5d760.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <title>Nuestra Historia | Shiroi Sora</title>
+    </head>
+
+    <body class="ag">
+        <header class="header">
+            <button type="button" onclick="activateShow()"><img src="./imagenes/logo-reducido.png" alt="Logo"></button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" class="seleccionado">HOME</a></li>
+                    <li><a href="agentes.html">AGENTES</a></li>
+                    <li><a href="ShiroiSora.Objetos.html">OBJETOS</a></li>
+                    <li><a href="soporte.html">SOPORTE</a></li>
+                    <li><a href="iniciodesesion.html">INICIAR SESION</a></li>
+                </ul>
+            </nav>
+            <div class="left">
+                <picture>
+                    <source srcset="./imagenes/logo-reducido.png" media="(max-width: 1000px)">
+                    <img src="./imagenes/Logo.png" alt="Logo">
+                </picture>
+                <div class="menu">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="menu">
+                    <a href="agentes.html">AGENTES</a>
+                </div>
+                <div class="menu">
+                    <a href="ShiroiSora.Objetos.html">OBJETOS</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="menu">
+                    <a href="soporte.html">SOPORTE</a>
+                </div>
+                <div class="menu">
+                    <a href="iniciodesesion.html">INICIAR SESION</a>
+                </div>
+            </div>
+        </header>
+        <div class="espacio"></div>
+        <main>
+            <div class="agentes main">
+                <div class="fondomain">
+                    <p></p>
+                </div>
+                <h2>NUESTRA HISTORIA</h2>
+                <p>Shiroi Games fue creado en el año 2008 para desarrollar, publicar y ayudar a los jugadores de todo el mundo. En 2010, lanzamos nuestro videojuego estrella llamado "Warframe". Este se convirtio en uno de los juegos shooter RPG en tercera persona más jugados en Steam.</p>
+                <p>Al entrar en la nueva decada estamos desarrollando un videojuego llamado "Shiroi Sora" el cual es un modo historia de lo que paso antes de este gran titulo.</p>
+                <p>El juego sera lanzado en el cumpleaños de "Warframe" día 25 de marzo a nivel mundial con displonibilidad de crear tus propios mapas e interactuar con las historias de los distintos warframes</p>
+                <p class="final">Tras estos años de servicio deseamos que toda nuestra comunidad respete un discurso de diversidad e inclusion ya que podemos tener un gran impacto social.</p>
+            </div>
+        </main>
+        <footer>
+            <div class="columna">
+                <h2>QUIENES SOMOS</h2>
+                <p><a href="#">Historia</a></p>
+            </div>
+            <div class="columna">
+                <h2>CONTACTO</h2>
+                <p><a>Email: ShiroiSora_Game@gmail.com</a></p>
+                <p><a>Telefono: 914657891</a></p>
+                <p><a href="ubicacion.html">Ubicacion</a></p>
+            </div>
+        </footer>
+        <div class="cambiar-modo cambiar-tema">
+            <input type="checkbox" id="boton-cambiar-tema">
+            <label for="boton-cambiar-tema" class="social">
+                <i class="fas fa-moon cambiar-icono"></i>
+            </label>
+        </div>
+        <div class="redes">
+            <a class="social" href="https://www.instagram.com/shiroisora_game/"><i class="fab fa-instagram"></i></a>
+            <a class="social" href="https://twitter.com/ShiroiSora_Game"><i class="fab fa-twitter"></i></a>
+            <a class="social" href="https://www.facebook.com/shiroi.sora.5872/"><i class="fab fa-facebook"></i></a>
+            <a class="social" href="https://www.youtube.com/channel/UCd80_7ie1F2ba4PAnWDdlhA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="degradado"></div>
+        <script src="cambiarTema.js"></script>
+        <script src="./prueba.js"></script>
+    </body>
+</html>
