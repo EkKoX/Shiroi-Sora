@@ -1,4 +1,4 @@
-html[tema="dia"]{
+.dia{
     --clr-paragraph-color: #222;
     --clr-background: #FFF;
     --clr-primary: #2AABCC;
@@ -8,7 +8,7 @@ html[tema="dia"]{
     --clr-footer-background: rgba(247, 247, 247, 1);
     --clr-gradient-intensity: rgba(129, 182, 196,0.3);
 }
-html[tema="noche"]{
+.noche{
     --clr-paragraph-color: #DDD;
     --clr-background: #222;
     --clr-primary: #2AABCC;
