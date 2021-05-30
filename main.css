@@ -74,6 +74,17 @@ button{
     max-width: 100%;
     height: auto;
 }
+.navBg{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear 0.1s;
+    transition-duration: 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+}
 /*DIVS PRINCIPALES*/
 header{
     background: url(./imagenes/fondomenu.jpg) left top repeat-x var(--clr-background);
@@ -284,6 +295,8 @@ li a.seleccionado::before{
 }
 .show{
     transform: translateX(100vw);
+    opacity: 1;
+    transition: opacity 0.3s linear 0.1s, transform 0.3s linear 0;
 }
 /*FIN PARTES DEL HEADER*/
 
@@ -941,6 +954,12 @@ footer h2{
 }
 
 @media screen and (max-width: 625px){
+    header{
+        padding: 0;
+    }
+    button{
+        padding: 0.313rem;
+    }
     .imgob{
         display: none;
     }

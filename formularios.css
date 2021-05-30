@@ -123,6 +123,22 @@ nav a:hover{
     color: var(--clr-background);
     border: 0.063rem solid var(--clr-background);
 }
+.navBg{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear 0.1s;
+    transition-duration: 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+}
+.show{
+    transform: translateX(100vw);
+    opacity: 1;
+    transition: opacity 0.3s linear 0.1s, transform 0.3s linear 0;
+}
 nav a:hover::before{
     transform:scale(1);
 }
@@ -398,6 +414,6 @@ footer h2{
         align-items: center;
     }
     form{
-        width: 90%;
+        width: 85%;
     }
 }
